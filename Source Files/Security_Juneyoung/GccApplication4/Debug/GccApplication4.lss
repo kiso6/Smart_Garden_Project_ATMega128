@@ -1,0 +1,303 @@
+
+GccApplication4.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000236  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001c2  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000002  00800100  00800100  00000236  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000236  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000268  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000048  00000000  00000000  000002a4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000a92  00000000  00000000  000002ec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000889  00000000  00000000  00000d7e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000403  00000000  00000000  00001607  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000088  00000000  00000000  00001a0c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000467  00000000  00000000  00001a94  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000169  00000000  00000000  00001efb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000038  00000000  00000000  00002064  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	53 c0       	rjmp	.+166    	; 0xac <__bad_interrupt>
+   6:	00 00       	nop
+   8:	51 c0       	rjmp	.+162    	; 0xac <__bad_interrupt>
+   a:	00 00       	nop
+   c:	4f c0       	rjmp	.+158    	; 0xac <__bad_interrupt>
+   e:	00 00       	nop
+  10:	4d c0       	rjmp	.+154    	; 0xac <__bad_interrupt>
+  12:	00 00       	nop
+  14:	4c c0       	rjmp	.+152    	; 0xae <__vector_5>
+  16:	00 00       	nop
+  18:	49 c0       	rjmp	.+146    	; 0xac <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	47 c0       	rjmp	.+142    	; 0xac <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	45 c0       	rjmp	.+138    	; 0xac <__bad_interrupt>
+  22:	00 00       	nop
+  24:	43 c0       	rjmp	.+134    	; 0xac <__bad_interrupt>
+  26:	00 00       	nop
+  28:	41 c0       	rjmp	.+130    	; 0xac <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	3f c0       	rjmp	.+126    	; 0xac <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	3d c0       	rjmp	.+122    	; 0xac <__bad_interrupt>
+  32:	00 00       	nop
+  34:	3b c0       	rjmp	.+118    	; 0xac <__bad_interrupt>
+  36:	00 00       	nop
+  38:	39 c0       	rjmp	.+114    	; 0xac <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	37 c0       	rjmp	.+110    	; 0xac <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	35 c0       	rjmp	.+106    	; 0xac <__bad_interrupt>
+  42:	00 00       	nop
+  44:	33 c0       	rjmp	.+102    	; 0xac <__bad_interrupt>
+  46:	00 00       	nop
+  48:	31 c0       	rjmp	.+98     	; 0xac <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	2f c0       	rjmp	.+94     	; 0xac <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	2d c0       	rjmp	.+90     	; 0xac <__bad_interrupt>
+  52:	00 00       	nop
+  54:	2b c0       	rjmp	.+86     	; 0xac <__bad_interrupt>
+  56:	00 00       	nop
+  58:	29 c0       	rjmp	.+82     	; 0xac <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	27 c0       	rjmp	.+78     	; 0xac <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	25 c0       	rjmp	.+74     	; 0xac <__bad_interrupt>
+  62:	00 00       	nop
+  64:	23 c0       	rjmp	.+70     	; 0xac <__bad_interrupt>
+  66:	00 00       	nop
+  68:	21 c0       	rjmp	.+66     	; 0xac <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	1f c0       	rjmp	.+62     	; 0xac <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	1d c0       	rjmp	.+58     	; 0xac <__bad_interrupt>
+  72:	00 00       	nop
+  74:	1b c0       	rjmp	.+54     	; 0xac <__bad_interrupt>
+  76:	00 00       	nop
+  78:	19 c0       	rjmp	.+50     	; 0xac <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	17 c0       	rjmp	.+46     	; 0xac <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	15 c0       	rjmp	.+42     	; 0xac <__bad_interrupt>
+  82:	00 00       	nop
+  84:	13 c0       	rjmp	.+38     	; 0xac <__bad_interrupt>
+  86:	00 00       	nop
+  88:	11 c0       	rjmp	.+34     	; 0xac <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_clear_bss>:
+  98:	21 e0       	ldi	r18, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	01 c0       	rjmp	.+2      	; 0xa2 <.do_clear_bss_start>
+
+000000a0 <.do_clear_bss_loop>:
+  a0:	1d 92       	st	X+, r1
+
+000000a2 <.do_clear_bss_start>:
+  a2:	a2 30       	cpi	r26, 0x02	; 2
+  a4:	b2 07       	cpc	r27, r18
+  a6:	e1 f7       	brne	.-8      	; 0xa0 <.do_clear_bss_loop>
+  a8:	73 d0       	rcall	.+230    	; 0x190 <main>
+  aa:	89 c0       	rjmp	.+274    	; 0x1be <_exit>
+
+000000ac <__bad_interrupt>:
+  ac:	a9 cf       	rjmp	.-174    	; 0x0 <__vectors>
+
+000000ae <__vector_5>:
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  ae:	1f 92       	push	r1
+  b0:	0f 92       	push	r0
+  b2:	0f b6       	in	r0, 0x3f	; 63
+  b4:	0f 92       	push	r0
+  b6:	11 24       	eor	r1, r1
+  b8:	8f 93       	push	r24
+  ba:	9f 93       	push	r25
+  bc:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+  c0:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+  c4:	04 97       	sbiw	r24, 0x04	; 4
+  c6:	79 f0       	breq	.+30     	; 0xe6 <__vector_5+0x38>
+  c8:	81 e0       	ldi	r24, 0x01	; 1
+  ca:	88 bb       	out	0x18, r24	; 24
+  cc:	8f e3       	ldi	r24, 0x3F	; 63
+  ce:	97 e7       	ldi	r25, 0x77	; 119
+  d0:	01 97       	sbiw	r24, 0x01	; 1
+  d2:	f1 f7       	brne	.-4      	; 0xd0 <__vector_5+0x22>
+  d4:	00 c0       	rjmp	.+0      	; 0xd6 <__vector_5+0x28>
+  d6:	00 00       	nop
+  d8:	18 ba       	out	0x18, r1	; 24
+  da:	8f e3       	ldi	r24, 0x3F	; 63
+  dc:	97 e7       	ldi	r25, 0x77	; 119
+  de:	01 97       	sbiw	r24, 0x01	; 1
+  e0:	f1 f7       	brne	.-4      	; 0xde <__vector_5+0x30>
+  e2:	00 c0       	rjmp	.+0      	; 0xe4 <__vector_5+0x36>
+  e4:	00 00       	nop
+  e6:	9f 91       	pop	r25
+  e8:	8f 91       	pop	r24
+  ea:	0f 90       	pop	r0
+  ec:	0f be       	out	0x3f, r0	; 63
+  ee:	0f 90       	pop	r0
+  f0:	1f 90       	pop	r1
+  f2:	18 95       	reti
+
+000000f4 <SC_buzzer>:
+  f4:	81 e0       	ldi	r24, 0x01	; 1
+  f6:	88 bb       	out	0x18, r24	; 24
+  f8:	8f e3       	ldi	r24, 0x3F	; 63
+  fa:	97 e7       	ldi	r25, 0x77	; 119
+  fc:	01 97       	sbiw	r24, 0x01	; 1
+  fe:	f1 f7       	brne	.-4      	; 0xfc <SC_buzzer+0x8>
+ 100:	00 c0       	rjmp	.+0      	; 0x102 <SC_buzzer+0xe>
+ 102:	00 00       	nop
+ 104:	18 ba       	out	0x18, r1	; 24
+ 106:	8f e3       	ldi	r24, 0x3F	; 63
+ 108:	97 e7       	ldi	r25, 0x77	; 119
+ 10a:	01 97       	sbiw	r24, 0x01	; 1
+ 10c:	f1 f7       	brne	.-4      	; 0x10a <SC_buzzer+0x16>
+ 10e:	00 c0       	rjmp	.+0      	; 0x110 <SC_buzzer+0x1c>
+ 110:	00 00       	nop
+ 112:	08 95       	ret
+
+00000114 <SC_getCode>:
+ 114:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 118:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 11c:	00 97       	sbiw	r24, 0x00	; 0
+ 11e:	41 f4       	brne	.+16     	; 0x130 <SC_getCode+0x1c>
+ 120:	80 9b       	sbis	0x10, 0	; 16
+ 122:	06 c0       	rjmp	.+12     	; 0x130 <SC_getCode+0x1c>
+ 124:	01 96       	adiw	r24, 0x01	; 1
+ 126:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 12a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 12e:	08 95       	ret
+ 130:	81 30       	cpi	r24, 0x01	; 1
+ 132:	91 05       	cpc	r25, r1
+ 134:	41 f4       	brne	.+16     	; 0x146 <SC_getCode+0x32>
+ 136:	81 9b       	sbis	0x10, 1	; 16
+ 138:	06 c0       	rjmp	.+12     	; 0x146 <SC_getCode+0x32>
+ 13a:	01 96       	adiw	r24, 0x01	; 1
+ 13c:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 140:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 144:	08 95       	ret
+ 146:	82 30       	cpi	r24, 0x02	; 2
+ 148:	91 05       	cpc	r25, r1
+ 14a:	41 f4       	brne	.+16     	; 0x15c <SC_getCode+0x48>
+ 14c:	82 9b       	sbis	0x10, 2	; 16
+ 14e:	06 c0       	rjmp	.+12     	; 0x15c <SC_getCode+0x48>
+ 150:	01 96       	adiw	r24, 0x01	; 1
+ 152:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 156:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 15a:	08 95       	ret
+ 15c:	83 30       	cpi	r24, 0x03	; 3
+ 15e:	91 05       	cpc	r25, r1
+ 160:	59 f4       	brne	.+22     	; 0x178 <SC_getCode+0x64>
+ 162:	83 9b       	sbis	0x10, 3	; 16
+ 164:	09 c0       	rjmp	.+18     	; 0x178 <SC_getCode+0x64>
+ 166:	01 96       	adiw	r24, 0x01	; 1
+ 168:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 16c:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 170:	c1 df       	rcall	.-126    	; 0xf4 <SC_buzzer>
+ 172:	c0 df       	rcall	.-128    	; 0xf4 <SC_buzzer>
+ 174:	bf cf       	rjmp	.-130    	; 0xf4 <SC_buzzer>
+ 176:	08 95       	ret
+ 178:	80 b3       	in	r24, 0x10	; 16
+ 17a:	08 95       	ret
+
+0000017c <SC_out>:
+ 17c:	87 9b       	sbis	0x10, 7	; 16
+ 17e:	07 c0       	rjmp	.+14     	; 0x18e <SC_out+0x12>
+ 180:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 184:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 188:	b5 df       	rcall	.-150    	; 0xf4 <SC_buzzer>
+ 18a:	b4 df       	rcall	.-152    	; 0xf4 <SC_buzzer>
+ 18c:	b3 cf       	rjmp	.-154    	; 0xf4 <SC_buzzer>
+ 18e:	08 95       	ret
+
+00000190 <main>:
+}
+
+int main(void)
+{
+	//PORT D to get get button inputs
+	DDRD = 0x00;
+ 190:	11 ba       	out	0x11, r1	; 17
+	
+	//PORT B0 to make buzzer brr, (an output)
+	DDRB = 0b00000001;
+ 192:	81 e0       	ldi	r24, 0x01	; 1
+ 194:	87 bb       	out	0x17, r24	; 23
+	
+	
+	//Initialize PORTE to use Interrupt INT4~7
+	DDRE = 0b00000000;// 입력설정
+ 196:	12 b8       	out	0x02, r1	; 2
+	PORTE = 0b00010000; // 풀업저항설정
+ 198:	80 e1       	ldi	r24, 0x10	; 16
+ 19a:	83 b9       	out	0x03, r24	; 3
+	EICRA = 0b10000000; //인터럽트트리거방식설정
+ 19c:	90 e8       	ldi	r25, 0x80	; 128
+ 19e:	90 93 6a 00 	sts	0x006A, r25	; 0x80006a <__TEXT_REGION_LENGTH__+0x7e006a>
+	EIMSK = 0b00010000; //인터럽트허용설정
+ 1a2:	89 bf       	out	0x39, r24	; 57
+	SREG |= 0x80; //전체인트럽트허가
+ 1a4:	8f b7       	in	r24, 0x3f	; 63
+ 1a6:	80 68       	ori	r24, 0x80	; 128
+ 1a8:	8f bf       	out	0x3f, r24	; 63
+	
+	while (1)
+	{
+		//Security Check
+		if(SC_state!=4)
+ 1aa:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 1ae:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 1b2:	04 97       	sbiw	r24, 0x04	; 4
+ 1b4:	11 f0       	breq	.+4      	; 0x1ba <main+0x2a>
+		{
+			//waits for entering sequence
+			SC_getCode();
+ 1b6:	ae df       	rcall	.-164    	; 0x114 <SC_getCode>
+ 1b8:	f8 cf       	rjmp	.-16     	; 0x1aa <main+0x1a>
+		}
+		else
+		{
+			//wait for out signal
+			SC_out();
+ 1ba:	e0 df       	rcall	.-64     	; 0x17c <SC_out>
+ 1bc:	f6 cf       	rjmp	.-20     	; 0x1aa <main+0x1a>
+
+000001be <_exit>:
+ 1be:	f8 94       	cli
+
+000001c0 <__stop_program>:
+ 1c0:	ff cf       	rjmp	.-2      	; 0x1c0 <__stop_program>
